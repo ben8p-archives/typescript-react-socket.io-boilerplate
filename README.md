@@ -1,5 +1,5 @@
 # after cloning....
-(all from project directory)
+(all from project directory)  
 1. `npm intall`  
 2. `node_modules\.bin\typings install dt~react --global --save`  
 3. `node_modules\.bin\typings install dt~react-dom --global --save`  
