@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react"
+    },
+    "filesGlob": [
+        "./src/**/*.tsx",
+        "./src/**/*.ts",
+        "./typings/index.d.ts"
+    ],
+    "files": [
+        "./src/components/Hello.tsx",
+        "./src/index.tsx",
+        "./typings/index.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
