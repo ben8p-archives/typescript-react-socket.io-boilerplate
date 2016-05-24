@@ -1,7 +1,7 @@
-import * as React from "react";
-import * as promise from "promise";
+import * as React from 'react';
+import 'promise';
 
-import "./styles/Hello.less";
+import './styles/Hello.less';
 
 export interface HelloProps { name: string; lastname: string; }
 
@@ -10,29 +10,29 @@ interface HelloState {
 }
 
 export class Hello extends React.Component<HelloProps, {}> {
-    state: HelloState;
+    public state: HelloState;
 
     constructor() {
       super();
       this.state = this.getInitialState();
     }
 
-     getInitialState():HelloState {
-        return {question: ""};
+     public getInitialState(): HelloState {
+        return {question: ''};
     }
 
-    componentDidMount() {
-      let promise: Promise.IThenable<Boolean> = new Promise(function(resolve: (value: Boolean) => void, reject: (reason: Boolean) => void) {
-          setTimeout(function() {
-            resolve(true);
-          }, 2500);
-      });
-      promise.then((value: Boolean) => {
-          this.setState({question: "And you ?"});
-      });
+    public componentDidMount(): void {
+        let promise: Promise.IThenable<Boolean> = new Promise(function(resolve: (value: Boolean) => void, reject: (reason: Boolean) => void): void {
+            setTimeout(function(): void {
+                resolve(true);
+            }, 2500);
+        });
+        promise.then((value: Boolean) => {
+            this.setState({question: 'And you ?'});
+        });
     }
 
-    render() {
+    public render(): JSX.Element {
         return <h1>Hello I am {this.props.name} {this.props.lastname}! {this.state.question}</h1>;
     }
 }
