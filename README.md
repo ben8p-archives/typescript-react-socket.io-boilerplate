@@ -23,6 +23,9 @@ define how TypeScript will do his job.
 "files" section is dynamic. Do not change.  
 Instead update "filesGlob"  
 
+# tslint.json
+define how to lint the typescript / jsx code  
+
 # typings.json
 define which typings are available for TypeScript  
 To install typings:  
