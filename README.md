@@ -10,6 +10,7 @@
 - to clean the "dist" folder: `node_modules\.bin\grunt clean:release`
 - to webpack the app: `node_modules\.bin\grunt webpack:main`
 - to release the app: `node_modules\.bin\grunt`
+- to run a local webserver: `.\node_modules\.bin\grunt connect:server:keepalive`
 
 # gruntfile.js
 define all grunt task o help the development

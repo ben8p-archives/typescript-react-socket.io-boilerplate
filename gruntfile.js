@@ -10,6 +10,17 @@ var REACT_FOLDER = 'react/',
 
 module.exports = function(grunt) {
   grunt.initConfig({
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          useAvailablePort: true,
+          base: {
+            path: RELEASE_FOLDER
+          }
+        },
+      },
+    },
     copy: {
       main: {
         files: [
@@ -105,6 +116,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-webpack');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-string-replace');
 
   grunt.registerTask('release', ['copy:main', 'string-replace:main', 'webpack:main']);
