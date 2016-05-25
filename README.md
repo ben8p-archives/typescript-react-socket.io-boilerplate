@@ -3,6 +3,7 @@
 1. `npm intall`  
 2. `node_modules\.bin\typings install dt~react --global --save`  
 3. `node_modules\.bin\typings install dt~react-dom --global --save`  
+4. `node_modules\.bin\typings install dt~promise --global --save`  
 
 # GRUNT tasks
 - to release the app on any change: `node_modules\.bin\grunt watch`
