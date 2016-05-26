@@ -1,4 +1,7 @@
 /node_modules
+/dist-client
+/dist-server
 /dist
 /typings
 *~
+npm-debug.log

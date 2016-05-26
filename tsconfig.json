@@ -8,13 +8,16 @@
         "jsx": "react"
     },
     "filesGlob": [
-        "./src/**/*.tsx",
-        "./src/**/*.ts",
+        "./src-client/**/*.tsx",
+        "./src-client/**/*.ts",
+        "./src-server/**/*.tsx",
+        "./src-server/**/*.ts",
         "./typings/index.d.ts"
     ],
     "files": [
-        "./src/components/Hello.tsx",
-        "./src/index.tsx",
+        "./src-client/components/Hello.tsx",
+        "./src-client/index.tsx",
+        "./src-server/server.tsx",
         "./typings/index.d.ts"
     ],
     "atom": {

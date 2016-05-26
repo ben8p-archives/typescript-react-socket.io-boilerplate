@@ -2,15 +2,18 @@
   "dependencies": {
     "promise": "^7.1.1",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "socket.io": "^1.4.6",
+    "socket.io-client": "^1.4.6"
   },
   "devDependencies": {
     "css-loader": "^0.23.1",
+    "express": "^4.13.4",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-run": "^0.6.0",
     "grunt-string-replace": "^1.2.1",
     "grunt-webpack": "^1.0.11",
     "less": "^2.7.1",
@@ -30,7 +33,13 @@
   "description": "boilerplate",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node_modules/.bin/typings install dt~react dt~react-dom dt~promise dt~socket.io-client dt~express dt~socket.io dt~node-4 dt~express-serve-static-core dt~mime dt~serve-static --global --save",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/grunt && node dist-server/server.js",
+    "dev-client": "node_modules/.bin/grunt watch:client",
+    "dev-server": "node_modules/.bin/grunt watch:server",
+    "clean": "node_modules/.bin/grunt clean:all",
+    "release": "node_modules/.bin/grunt"
   },
   "author": "benjamin santalucia",
   "license": "ISC"

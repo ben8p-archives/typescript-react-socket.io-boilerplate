@@ -1,16 +1,13 @@
 # after cloning....
 (all from project directory)  
-1. `npm intall`  
-2. `node_modules\.bin\typings install dt~react --global --save`  
-3. `node_modules\.bin\typings install dt~react-dom --global --save`  
-4. `node_modules\.bin\typings install dt~promise --global --save`  
+install everything: `npm intall`
 
 # GRUNT tasks
-- to release the app on any change: `node_modules\.bin\grunt watch`
-- to clean the "dist" folder: `node_modules\.bin\grunt clean:release`
-- to webpack the app: `node_modules\.bin\grunt webpack:main`
-- to release the app: `node_modules\.bin\grunt`
-- to run a local webserver: `node_modules\.bin\grunt connect:server:keepalive`
+- to release the app on any file change (client): `npm run dev-client`
+- to release the app on any file change (client): `npm run dev-server`
+- to release the app: `npm run release`
+- to start the server: `npm run start`
+- to clean the release folders: `npm run clean`
 
 # gruntfile.js
 define all grunt task o help the development
