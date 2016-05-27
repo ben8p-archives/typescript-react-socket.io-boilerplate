@@ -1,10 +1,10 @@
 # after cloning....
-(all from project directory)  
+(from project directory)  
 install everything: `npm intall`
 
 # GRUNT tasks
 - to release the app on any file change (client): `npm run dev-client`
-- to release the app on any file change (client): `npm run dev-server`
+- to release the app on any file change (server): `npm run dev-server`
 - to release the app: `npm run release`
 - to start the server: `npm run start`
 - to clean the release folders: `npm run clean`
